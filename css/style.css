@@ -10,21 +10,21 @@ img {
 
 .container {
     min-width: 320px;
-    max-width: 448px;
+    /*max-width: 448px;*/
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media screen and (min-width:768px ) and (max-width:1157px ) {
+@media screen and (min-width:768px ) and (max-width:1199px ) {
     .container {
-        max-width: 738px;
+        width: 768px;
     }
 }
-@media screen and (min-width:1158px ) and (max-width:1440px ) {
+@media screen and (min-width:1200px ) and (max-width:1440px ) {
     .container {
-        max-width: 1128px;
+        width: 1158px;
     }
 }
 
@@ -305,7 +305,8 @@ img {
 
 @media screen and (min-width:768px ) and (max-width:1199px ) {
     .background-body {
-        max-width:768px;
+        min-width:768px;
+        max-width: 1199px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/body-fon-tabl.jpg");
     }
 }
@@ -444,8 +445,10 @@ img {
     }
 }
 
-.section {
-    padding-bottom: 120px;
+@media screen and (min-width: 1200px){
+    .section {
+        padding-bottom: 120px;
+    }   
 }
 
 @media screen and (max-width: 1199px){
@@ -715,6 +718,12 @@ img {
     }   
 }
 
+@media screen and (min-width:768px){
+    .container-soc{
+        margin-left: 24px;
+    }   
+}
+
 @media screen and (min-width: 1200px){
     .container-soc {
         padding-left: 120px;
@@ -853,6 +862,7 @@ img {
     }   
 }
 
+
 .container-logo p {
     font-weight: 400;
     font-size: 16px;
@@ -867,7 +877,7 @@ img {
     margin-top: 16px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 380px) and (max-width:767){
     .container-logo p{
         display: flex;
         justify-content: center;
@@ -879,6 +889,13 @@ img {
 
 .box-subscribe {
     padding-left: 80px;
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    .box-subscribe{
+        padding: 0;
+        margin-top: 72px;
+    }   
 }
 
 @media screen and (max-width: 767px){
@@ -1229,7 +1246,14 @@ img {
         justify-content: center;
         align-items: center;
     }
-}    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .container-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 .body-btn-items {
     list-style: none;
@@ -1297,12 +1321,24 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*min-height: 576px;
-    min-width: 408px;*/
     padding: 72px 24px 24px 24px;
     background-color: #fcfcfc;
     border-radius: 4px;
+}
 
+@media screen and (min-width: 380px) and (max-width: 767px){
+    .modal {
+        padding: 72px 24px 24px 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .modal {
+        padding-left: 23px;
+        padding-right: 25px;
+        padding-top: 72px;
+        padding-bottom: 24px;
+    }
 }
 
 /*___________________madal-form_______________________*/
