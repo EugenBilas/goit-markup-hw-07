@@ -346,11 +346,9 @@ img {
 
 @media screen and (max-width: 767px){
     .section-slogan-col {
-        ext-align: left;
+        text-align: left;
     }        
 }
-
-
 
 .slogan-icon {
     margin-bottom: 8px;
