@@ -36,6 +36,15 @@
                     <a class="contacts" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
                 </li>
             </ul>
+
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="burger-button" width="24" height="24" stroke="currentColor" viewBox="0 0 47 32">
+                    <use href="./img/icons.svg#icon-menu-mob"></use>
+                </svg>
+            </button>
             
         </div>
     </header>
@@ -282,16 +291,81 @@
                 <p class="box-subscribe-header">Subscribe</p>
                 <form class="box-form">
                     <input type="email" class="input-email" name="subscribe" placeholder="E-mail">
-                    <button class="subscribe">Subscribe
-                        <svg class="subscribe-icon" width="24" height="20">
-                            <use href="./img/subscribe.svg#icon-Subscribe"></use>
-                        </svg>
-                    </button>
+                    <div class="subscribe-footer">
+                        <button class="subscribe subscribe-footer">Subscribe
+                            <svg class="subscribe-icon" width="24" height="20">
+                                <use href="./img/subscribe.svg#icon-Subscribe"></use>
+                            </svg>
+                        </button>
+                    </div>
 
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> 
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu-container">
+            <button class="menu-button-toggle js-close-menu">
+                <svg class="menu-icon" width="8" height="8">
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+    
+            <ul class="menu-item-burger">
+                <li class="menu-link-burger"><a class="link-burger" href="./index.html">Studio</a></li>
+                <li class="menu-link-burger"><a class="link-burger" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu-link-burger"><a class="link-burger" href="#">Contacts</a></li>
+            </ul>
+            <div class="menu-contacts-soc">
+                <ul class="menu-header-contacts">
+                    <li class="menu-phone">
+                        <a class="contacts-tel-menu" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="menu-mail">
+                        <a class="contacts-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-soc-list">
+                    <li class="menu-soc-item">
+                        <a href="#" class="menu-soc-link">
+                            <svg class="menu-soc-icon">
+                                <use href="./img/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a href="#" class="menu-soc-link">
+                            <svg class="menu-soc-icon">
+                                <use href="./img/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a href="#" class="menu-soc-link">
+                            <svg class="menu-soc-icon">
+                                <use href="./img/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a href="#" class="menu-soc-link">
+                            <svg class="menu-soc-icon">
+                                <use href="./img/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 
